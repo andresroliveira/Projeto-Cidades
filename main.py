@@ -7,7 +7,7 @@ from tqdm import tqdm
 URL_BASE = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = "ProjetoCidadesPesquisa/1.0"
 CIDADES = [
-    "Campinas",  
+    "Campinas",
     "Guaxupe",
     "Muzambinho",
     "Guaranesia",
@@ -22,6 +22,7 @@ CIDADES = [
     "Areado",
     "Alterosa",
     "Machado",
+    "Alfenas",
     "Pocos de Caldas",
 ]
 
@@ -57,7 +58,9 @@ def main():
         print(df.head())
         output_file = "cidades_geo.csv"
         df.to_csv(output_file, index=False, encoding="utf-8")
-        print(f"\nArquivo '{output_file}' salvo com sucesso com {len(df)} registros!")
+        print(
+            f"\nArquivo '{output_file}' salvo com sucesso com {len(df)} registros!"
+        )
     else:
         print("\nNenhum dado foi coletado.")
 
