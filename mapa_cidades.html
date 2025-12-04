@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0370192de19faa7f2d1e53536b65af75 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0370192de19faa7f2d1e53536b65af75" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0370192de19faa7f2d1e53536b65af75 = L.map(
+                "map_0370192de19faa7f2d1e53536b65af75",
+                {
+                    center: [-21.46474308823529, -46.50097022352941],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_10f808b2d426e4246ecf2fdfc77516aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_10f808b2d426e4246ecf2fdfc77516aa.addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var marker_0fcbca248c7da4c388683fa0a34796a2 = L.marker(
+                [-22.9056391, -47.059564],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_a8975d1ef0efa4ff5c498caa10affbcd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_148b7cc7cb68a6fafc4849cbd51095da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a73714ebf1f1b1974f1c7bc4acef48e6 = $(`<div id="html_a73714ebf1f1b1974f1c7bc4acef48e6" style="width: 100.0%; height: 100.0%;"><b>Campinas</b><br>administrative</br></div>`)[0];
+                popup_148b7cc7cb68a6fafc4849cbd51095da.setContent(html_a73714ebf1f1b1974f1c7bc4acef48e6);
+            
+        
+
+        marker_0fcbca248c7da4c388683fa0a34796a2.bindPopup(popup_148b7cc7cb68a6fafc4849cbd51095da)
+        ;
+
+        
+    
+    
+            marker_0fcbca248c7da4c388683fa0a34796a2.bindTooltip(
+                `<div>
+                     Campinas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0fcbca248c7da4c388683fa0a34796a2.setIcon(icon_a8975d1ef0efa4ff5c498caa10affbcd);
+            
+    
+            var marker_54cf6de6e34e652c10b62ebe92fbb945 = L.marker(
+                [-21.3087615, -46.7190609],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_12039f39dd92166c23be47d0649cbb47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5ff9480aee61bab42e0b322d3a4da40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6ac9ee216b7925cecba14fd8f5059ee = $(`<div id="html_f6ac9ee216b7925cecba14fd8f5059ee" style="width: 100.0%; height: 100.0%;"><b>Guaxupé</b><br>administrative</br></div>`)[0];
+                popup_b5ff9480aee61bab42e0b322d3a4da40.setContent(html_f6ac9ee216b7925cecba14fd8f5059ee);
+            
+        
+
+        marker_54cf6de6e34e652c10b62ebe92fbb945.bindPopup(popup_b5ff9480aee61bab42e0b322d3a4da40)
+        ;
+
+        
+    
+    
+            marker_54cf6de6e34e652c10b62ebe92fbb945.bindTooltip(
+                `<div>
+                     Guaxupé
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54cf6de6e34e652c10b62ebe92fbb945.setIcon(icon_12039f39dd92166c23be47d0649cbb47);
+            
+    
+            var marker_60ce597211f43a3521e414fe8980c379 = L.marker(
+                [-21.3684325, -46.522317],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_d43456d7685ad33310473ab0681e2ef5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79d9f6adf0315b9055a9fbcb95119b02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_011d1cdea458ebe5f234dea0b3b80231 = $(`<div id="html_011d1cdea458ebe5f234dea0b3b80231" style="width: 100.0%; height: 100.0%;"><b>Muzambinho</b><br>administrative</br></div>`)[0];
+                popup_79d9f6adf0315b9055a9fbcb95119b02.setContent(html_011d1cdea458ebe5f234dea0b3b80231);
+            
+        
+
+        marker_60ce597211f43a3521e414fe8980c379.bindPopup(popup_79d9f6adf0315b9055a9fbcb95119b02)
+        ;
+
+        
+    
+    
+            marker_60ce597211f43a3521e414fe8980c379.bindTooltip(
+                `<div>
+                     Muzambinho
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_60ce597211f43a3521e414fe8980c379.setIcon(icon_d43456d7685ad33310473ab0681e2ef5);
+            
+    
+            var marker_ca6f58eebb3febeb8ea817b2c11f263f = L.marker(
+                [-21.3024827, -46.7956962],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_59dbb705ecdaf250d339ea2e85ad34b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b88e6ebd476857caa7d95e8a9478143e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5a29782ad8d475f7695d16306151f15 = $(`<div id="html_c5a29782ad8d475f7695d16306151f15" style="width: 100.0%; height: 100.0%;"><b>Guaranésia</b><br>administrative</br></div>`)[0];
+                popup_b88e6ebd476857caa7d95e8a9478143e.setContent(html_c5a29782ad8d475f7695d16306151f15);
+            
+        
+
+        marker_ca6f58eebb3febeb8ea817b2c11f263f.bindPopup(popup_b88e6ebd476857caa7d95e8a9478143e)
+        ;
+
+        
+    
+    
+            marker_ca6f58eebb3febeb8ea817b2c11f263f.bindTooltip(
+                `<div>
+                     Guaranésia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ca6f58eebb3febeb8ea817b2c11f263f.setIcon(icon_59dbb705ecdaf250d339ea2e85ad34b7);
+            
+    
+            var marker_17a7028ff7a7fd51890f3b5c25955155 = L.marker(
+                [-21.252778, -46.577223],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_4a24d699d1278242c95d7e1aa83f3c17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bbb29029cccece9615c6763e9a62c47 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_baf7cf169ddf2fd9a3d75450c95b220a = $(`<div id="html_baf7cf169ddf2fd9a3d75450c95b220a" style="width: 100.0%; height: 100.0%;"><b>Juruaia</b><br>administrative</br></div>`)[0];
+                popup_0bbb29029cccece9615c6763e9a62c47.setContent(html_baf7cf169ddf2fd9a3d75450c95b220a);
+            
+        
+
+        marker_17a7028ff7a7fd51890f3b5c25955155.bindPopup(popup_0bbb29029cccece9615c6763e9a62c47)
+        ;
+
+        
+    
+    
+            marker_17a7028ff7a7fd51890f3b5c25955155.bindTooltip(
+                `<div>
+                     Juruaia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_17a7028ff7a7fd51890f3b5c25955155.setIcon(icon_4a24d699d1278242c95d7e1aa83f3c17);
+            
+    
+            var marker_2bc5f0f4a34777198d2d43ec558b9dc9 = L.marker(
+                [-21.3225052, -46.3649768],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_42922774cb15e870da738a7c354b2ea0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12f07487c534912fbd10ade76754fd61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5beda5488ab615f7ff50d70109d2a2ff = $(`<div id="html_5beda5488ab615f7ff50d70109d2a2ff" style="width: 100.0%; height: 100.0%;"><b>Monte Belo</b><br>administrative</br></div>`)[0];
+                popup_12f07487c534912fbd10ade76754fd61.setContent(html_5beda5488ab615f7ff50d70109d2a2ff);
+            
+        
+
+        marker_2bc5f0f4a34777198d2d43ec558b9dc9.bindPopup(popup_12f07487c534912fbd10ade76754fd61)
+        ;
+
+        
+    
+    
+            marker_2bc5f0f4a34777198d2d43ec558b9dc9.bindTooltip(
+                `<div>
+                     Monte Belo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2bc5f0f4a34777198d2d43ec558b9dc9.setIcon(icon_42922774cb15e870da738a7c354b2ea0);
+            
+    
+            var marker_8c6eb51598932be3118604edea4aae80 = L.marker(
+                [-21.1316402, -46.6175338],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_2711b970629c6aa3153bc1ee65967b86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7f2873dbd80a55fd47d4b1f6e734e1a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df734ce43b0ac30f138cd2462352f101 = $(`<div id="html_df734ce43b0ac30f138cd2462352f101" style="width: 100.0%; height: 100.0%;"><b>São Pedro da União</b><br>administrative</br></div>`)[0];
+                popup_7f2873dbd80a55fd47d4b1f6e734e1a3.setContent(html_df734ce43b0ac30f138cd2462352f101);
+            
+        
+
+        marker_8c6eb51598932be3118604edea4aae80.bindPopup(popup_7f2873dbd80a55fd47d4b1f6e734e1a3)
+        ;
+
+        
+    
+    
+            marker_8c6eb51598932be3118604edea4aae80.bindTooltip(
+                `<div>
+                     São Pedro da União
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8c6eb51598932be3118604edea4aae80.setIcon(icon_2711b970629c6aa3153bc1ee65967b86);
+            
+    
+            var marker_1cf62838ae163cae880963b159bcf575 = L.marker(
+                [-21.1263862, -46.424537],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_c11b0412c9b555fd97167e878cfa8ca4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_073cc1696d6e4b342d95f9bb852f1f5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e2e9ed94219cece5ce545f5ce0c8cc7 = $(`<div id="html_5e2e9ed94219cece5ce545f5ce0c8cc7" style="width: 100.0%; height: 100.0%;"><b>Nova Resende</b><br>administrative</br></div>`)[0];
+                popup_073cc1696d6e4b342d95f9bb852f1f5e.setContent(html_5e2e9ed94219cece5ce545f5ce0c8cc7);
+            
+        
+
+        marker_1cf62838ae163cae880963b159bcf575.bindPopup(popup_073cc1696d6e4b342d95f9bb852f1f5e)
+        ;
+
+        
+    
+    
+            marker_1cf62838ae163cae880963b159bcf575.bindTooltip(
+                `<div>
+                     Nova Resende
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cf62838ae163cae880963b159bcf575.setIcon(icon_c11b0412c9b555fd97167e878cfa8ca4);
+            
+    
+            var marker_b4e2a4ee5a2610cd2ee55eff281cbca8 = L.marker(
+                [-21.4743338, -46.3964995],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_a4a4175596139866e510571e2cab8e67 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_60fe9600edc8c4e367f7e92dcded78ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8585f6e5adeccda3ecd4c9b98dc2a2a2 = $(`<div id="html_8585f6e5adeccda3ecd4c9b98dc2a2a2" style="width: 100.0%; height: 100.0%;"><b>Cabo Verde</b><br>administrative</br></div>`)[0];
+                popup_60fe9600edc8c4e367f7e92dcded78ca.setContent(html_8585f6e5adeccda3ecd4c9b98dc2a2a2);
+            
+        
+
+        marker_b4e2a4ee5a2610cd2ee55eff281cbca8.bindPopup(popup_60fe9600edc8c4e367f7e92dcded78ca)
+        ;
+
+        
+    
+    
+            marker_b4e2a4ee5a2610cd2ee55eff281cbca8.bindTooltip(
+                `<div>
+                     Cabo Verde
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b4e2a4ee5a2610cd2ee55eff281cbca8.setIcon(icon_a4a4175596139866e510571e2cab8e67);
+            
+    
+            var marker_b386d0c9f7b826d667f743d92ff27530 = L.marker(
+                [-21.6500058, -46.3947355],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_cf0b2efd63925cf9632f10a3d92d0981 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7944cafda7da04d27d9c912ce5771e2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac219b6f6f028682c4dd176431b1a88f = $(`<div id="html_ac219b6f6f028682c4dd176431b1a88f" style="width: 100.0%; height: 100.0%;"><b>Botelhos</b><br>administrative</br></div>`)[0];
+                popup_7944cafda7da04d27d9c912ce5771e2f.setContent(html_ac219b6f6f028682c4dd176431b1a88f);
+            
+        
+
+        marker_b386d0c9f7b826d667f743d92ff27530.bindPopup(popup_7944cafda7da04d27d9c912ce5771e2f)
+        ;
+
+        
+    
+    
+            marker_b386d0c9f7b826d667f743d92ff27530.bindTooltip(
+                `<div>
+                     Botelhos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b386d0c9f7b826d667f743d92ff27530.setIcon(icon_cf0b2efd63925cf9632f10a3d92d0981);
+            
+    
+            var marker_2e505e16d28cc3214d19ea90508ea8d9 = L.marker(
+                [-21.189722, -46.98],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_21a26a29692a00c49ba1a96fce52c343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_581bc7432f7db73586463f5d13890060 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_087ab006a23840efde1056e6e60b3d4e = $(`<div id="html_087ab006a23840efde1056e6e60b3d4e" style="width: 100.0%; height: 100.0%;"><b>Monte Santo de Minas</b><br>administrative</br></div>`)[0];
+                popup_581bc7432f7db73586463f5d13890060.setContent(html_087ab006a23840efde1056e6e60b3d4e);
+            
+        
+
+        marker_2e505e16d28cc3214d19ea90508ea8d9.bindPopup(popup_581bc7432f7db73586463f5d13890060)
+        ;
+
+        
+    
+    
+            marker_2e505e16d28cc3214d19ea90508ea8d9.bindTooltip(
+                `<div>
+                     Monte Santo de Minas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e505e16d28cc3214d19ea90508ea8d9.setIcon(icon_21a26a29692a00c49ba1a96fce52c343);
+            
+    
+            var marker_ecf390b11730728ca376263223f7227e = L.marker(
+                [-21.364444, -46.939722],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_58f3ef4ede794d3df1ddbb4ee277551f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac32bcdcc136a58588a3fc4f446141b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5192a70cc348776fe64d8d9f87265e1 = $(`<div id="html_b5192a70cc348776fe64d8d9f87265e1" style="width: 100.0%; height: 100.0%;"><b>Arceburgo</b><br>administrative</br></div>`)[0];
+                popup_ac32bcdcc136a58588a3fc4f446141b6.setContent(html_b5192a70cc348776fe64d8d9f87265e1);
+            
+        
+
+        marker_ecf390b11730728ca376263223f7227e.bindPopup(popup_ac32bcdcc136a58588a3fc4f446141b6)
+        ;
+
+        
+    
+    
+            marker_ecf390b11730728ca376263223f7227e.bindTooltip(
+                `<div>
+                     Arceburgo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ecf390b11730728ca376263223f7227e.setIcon(icon_58f3ef4ede794d3df1ddbb4ee277551f);
+            
+    
+            var marker_9294cc8bd13d70815fcb1829db70dad5 = L.marker(
+                [-21.3582771, -46.1476688],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_4261259a8c500d2f8007983d3dd275c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74302114679284eb1f59d9b25bd9b6dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a060532bfa6cfd4a8fdcf569b51f8500 = $(`<div id="html_a060532bfa6cfd4a8fdcf569b51f8500" style="width: 100.0%; height: 100.0%;"><b>Areado</b><br>administrative</br></div>`)[0];
+                popup_74302114679284eb1f59d9b25bd9b6dc.setContent(html_a060532bfa6cfd4a8fdcf569b51f8500);
+            
+        
+
+        marker_9294cc8bd13d70815fcb1829db70dad5.bindPopup(popup_74302114679284eb1f59d9b25bd9b6dc)
+        ;
+
+        
+    
+    
+            marker_9294cc8bd13d70815fcb1829db70dad5.bindTooltip(
+                `<div>
+                     Areado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9294cc8bd13d70815fcb1829db70dad5.setIcon(icon_4261259a8c500d2f8007983d3dd275c6);
+            
+    
+            var marker_0761442a41aec7f5d2d996dd18c59009 = L.marker(
+                [-21.249166, -46.143055],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_f05b6ca3029259177e63d375be14276a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e8c33fb921a660efc197a93712c2daa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fb24fcdd6455771f94815ece92acefc = $(`<div id="html_8fb24fcdd6455771f94815ece92acefc" style="width: 100.0%; height: 100.0%;"><b>Alterosa</b><br>administrative</br></div>`)[0];
+                popup_3e8c33fb921a660efc197a93712c2daa.setContent(html_8fb24fcdd6455771f94815ece92acefc);
+            
+        
+
+        marker_0761442a41aec7f5d2d996dd18c59009.bindPopup(popup_3e8c33fb921a660efc197a93712c2daa)
+        ;
+
+        
+    
+    
+            marker_0761442a41aec7f5d2d996dd18c59009.bindTooltip(
+                `<div>
+                     Alterosa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0761442a41aec7f5d2d996dd18c59009.setIcon(icon_f05b6ca3029259177e63d375be14276a);
+            
+    
+            var marker_0768e75e716acc785eab5b8ff2728514 = L.marker(
+                [-21.6762861, -45.9211696],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_a1464d54ff574ff3e6707c811a387a14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_237fcbff18374d51f73699a80b5e1a2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92eff7466d5b56c4637a4a2d271813f1 = $(`<div id="html_92eff7466d5b56c4637a4a2d271813f1" style="width: 100.0%; height: 100.0%;"><b>Machado</b><br>administrative</br></div>`)[0];
+                popup_237fcbff18374d51f73699a80b5e1a2b.setContent(html_92eff7466d5b56c4637a4a2d271813f1);
+            
+        
+
+        marker_0768e75e716acc785eab5b8ff2728514.bindPopup(popup_237fcbff18374d51f73699a80b5e1a2b)
+        ;
+
+        
+    
+    
+            marker_0768e75e716acc785eab5b8ff2728514.bindTooltip(
+                `<div>
+                     Machado
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0768e75e716acc785eab5b8ff2728514.setIcon(icon_a1464d54ff574ff3e6707c811a387a14);
+            
+    
+            var marker_db5345cab04d74e171fbb003f80646f5 = L.marker(
+                [-21.4297405, -45.9479419],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_2ef716ecc715e43e22390b98484c0706 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa368e9ac5c72b1d72f641976b9912e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e29becd00038492b3b4a69a43f8833a4 = $(`<div id="html_e29becd00038492b3b4a69a43f8833a4" style="width: 100.0%; height: 100.0%;"><b>Alfenas</b><br>administrative</br></div>`)[0];
+                popup_fa368e9ac5c72b1d72f641976b9912e5.setContent(html_e29becd00038492b3b4a69a43f8833a4);
+            
+        
+
+        marker_db5345cab04d74e171fbb003f80646f5.bindPopup(popup_fa368e9ac5c72b1d72f641976b9912e5)
+        ;
+
+        
+    
+    
+            marker_db5345cab04d74e171fbb003f80646f5.bindTooltip(
+                `<div>
+                     Alfenas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_db5345cab04d74e171fbb003f80646f5.setIcon(icon_2ef716ecc715e43e22390b98484c0706);
+            
+    
+            var marker_9b803c96ef7c5baf750ae974cc4a3be6 = L.marker(
+                [-21.7900318, -46.5647928],
+                {
+}
+            ).addTo(map_0370192de19faa7f2d1e53536b65af75);
+        
+    
+            var icon_3f3a23523e7ed30e06c5525316015b39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8fb8b03aa1cc52aa1aa2e32db73f35b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f869323e06a8866cac082f6ad015785 = $(`<div id="html_4f869323e06a8866cac082f6ad015785" style="width: 100.0%; height: 100.0%;"><b>Poços de Caldas</b><br>administrative</br></div>`)[0];
+                popup_c8fb8b03aa1cc52aa1aa2e32db73f35b.setContent(html_4f869323e06a8866cac082f6ad015785);
+            
+        
+
+        marker_9b803c96ef7c5baf750ae974cc4a3be6.bindPopup(popup_c8fb8b03aa1cc52aa1aa2e32db73f35b)
+        ;
+
+        
+    
+    
+            marker_9b803c96ef7c5baf750ae974cc4a3be6.bindTooltip(
+                `<div>
+                     Poços de Caldas
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9b803c96ef7c5baf750ae974cc4a3be6.setIcon(icon_3f3a23523e7ed30e06c5525316015b39);
+            
+</script>
+</html>
