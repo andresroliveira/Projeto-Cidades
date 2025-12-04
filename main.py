@@ -32,10 +32,14 @@ def main():
     headers = {"User-Agent": USER_AGENT}
     dados = []
     for cidade in tqdm(CIDADES, desc="Coletando dados"):
-        # https://nominatim.openstreetmap.org/search?q=Campinas,Brazil&format=json&polygon_geojson=1
-        url = f"{URL_BASE}?q={cidade},Brazil&format=json"
+        params = {
+            "q": f"{cidade},Brazil",
+            "format": "json",
+            "polygon_geojson": 1,  # <--- O pulo do gato está aqui
+            "limit": 1
+        }
         try:
-            response = requests.get(url, headers=headers)
+            response = requests.get(URL_BASE, headers=headers, params=params)
             response.raise_for_status()
             data = response.json()
             if data:
